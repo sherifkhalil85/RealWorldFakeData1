@@ -8,8 +8,8 @@ st.set_page_config(
     page_icon='🪙'
 )
 
-df1= pd.read_csv('C:\sherif\DS course\python sessions\session 38_ Streamlit\Data World projects\Real World Fake Data Season1\Financial Consumer Complaints.csv')
-df2=pd.read_csv('C:\sherif\DS course\python sessions\session 38_ Streamlit\Data World projects\Real World Fake Data Season1\Call Center.csv')
+df1= pd.read_csv("data/Financial Consumer Complaints.csv")
+df2=pd.read_csv("data/Call Center.csv")
 
 
 
