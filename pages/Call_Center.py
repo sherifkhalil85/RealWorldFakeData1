@@ -17,7 +17,7 @@ df['submited survey']= df['csat_score'].notna().astype(int)
 
 df['Weekday']=df['call_timestamp'].dt.strftime('%a')
 df['year']=df['call_timestamp'].dt.year
-df['week']= df['call_timestamp'].dt.week
+df['week']= df['call_timestamp'].dt.isocalendar().week
 df['month']= df['call_timestamp'].dt.month
 
 
