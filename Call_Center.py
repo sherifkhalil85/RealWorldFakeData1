@@ -10,7 +10,7 @@ st.set_page_config(
 
 ################## Loading Data ###########
 
-df= pd.read_csv('C:\sherif\DS course\python sessions\session 38_ Streamlit\Data World projects\Real World Fake Data Season1\Call Center.csv')
+df= pd.read_csv("data/Call Center.csv")
 df['call_timestamp']= pd.to_datetime(df['call_timestamp'], errors='coerce')
 df['TFB']= (df['csat_score']>=7).astype(int)
 df['submited survey']= df['csat_score'].notna().astype(int)
